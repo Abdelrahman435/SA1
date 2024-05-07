@@ -1,0 +1,77 @@
+.welcome-Section{
+    margin-top: 6rem;
+    padding: 3rem 0;
+
+}
+.sectionHeader.AdminWelcome-header{
+    margin-top: 4rem;
+    margin-bottom: 0;
+}
+.container.welcome-container{
+    padding: 3rem 0;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.container.welcome-container span{
+    font-size: 1.5rem;
+    color: var(--mainColor);
+}
+
+.container.charts-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.barCharts , .doughnutCharts,.lineCharts {
+    margin-inline: auto;
+}
+
+.barChart, .lineChart , .doughnutChart{
+   width:100% !important;
+   height: 100% !important;
+
+}
+
+.btn.admin-btn{
+    margin-top: 2rem;
+}
+
+
+/*=============================Responsive===================================*/
+
+@media (max-width:767px) {
+.container.charts-container{
+    flex-direction: column;
+}
+.container.welcome-container{
+    font-size: 2rem;
+}
+.barCharts,
+.doughnutCharts,
+.lineCharts {
+    margin: 2rem 0;
+    width: 100%;
+}
+
+
+}
+
+@media (min-width:768px) and (max-width:991px) {
+.container.charts-container {
+       flex-direction: column;
+    }
+        .barCharts,
+        .doughnutCharts,
+        .lineCharts {
+            margin: 2rem 0;
+            width: 100%;
+        }
+}
+
+@media (min-width:992px) {
+
+}

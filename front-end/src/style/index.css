@@ -1,0 +1,251 @@
+@font-face {
+    font-family: "mainFont";
+    src: url(../assests/fonts/Sofia_Sans_Semi_Condensed/SofiaSansSemiCondensed-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: "mainFontItalic";
+    src: url(../assests/fonts/Sofia_Sans_Semi_Condensed/SofiaSansSemiCondensed-Italic-VariableFont_wght.ttf);
+}
+
+*, *::after,*::before{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border:0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root{
+    --mainColor:#20ad96;
+    --mainFontColor:#3f3a64;
+    --secondaryFontColor:#adb4b7;
+    --secondaryColor:#57C5B6;
+    --mainBgColor:#F5F6F8;
+    --secondBgColor:#1D292E;
+
+    --container-width:90%;
+
+    --transition: all 500ms ease;
+}
+
+
+
+/* =================================General styles================================*/
+
+body{
+    
+    font-family: "mainFont",'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--mainFontColor);
+    line-height: 1.7;
+    overflow-x: hidden;
+}
+.container{
+    width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+h1, h2, h3, h4, h5, h6{
+    line-height: 1.2;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+a{
+    color: var(--mainFontColor);
+    text-decoration: none;
+}
+a:hover{
+    color: var(--mainColor);
+}
+img{
+    display: block;
+    object-fit: cover;
+    width: 100%;
+
+}
+
+/*===================================scrollToTop btn ==========================================*/
+
+.scrollToTop-btn{
+    background-color: var(--mainColor)!important;
+    border-radius: 50% !important;
+    width: 50px;
+    height: 50px;
+}
+.scrollToTop-btn svg{
+    width: 25px;
+}
+
+/*===================================spinner ==========================================*/
+.notFound{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: 5rem auto;
+}
+.notFound h1{
+    padding: 2rem;
+}
+/*===================================notFound ==========================================*/
+
+.pageSpinner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+}
+.spinner{
+    color: var(--mainColor);
+    width: 5rem;
+    height: 5rem;
+}
+
+/*==========================alert======================================*/
+.alert-container{
+        
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 60%;
+            margin: 0 auto;
+}
+.alret{
+    width: 100%;
+}
+/*==========================Filter======================================*/
+.filter-search{
+    border: none;
+    width:60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+
+}
+.filter-search .search-btn{
+   padding: 1rem 2rem;
+border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.filter-search .form-control{
+padding: 1rem 2rem;
+border-top-right-radius: 0;
+border-bottom-right-radius: 0;
+
+}
+.filter-search .form-control:focus{
+    border-color:var(--mainColor);
+    box-shadow: 0 0 0 0.25rem rgb(44 167 112 / 25%);
+}
+/*==========================navigation links in page header======================================*/
+
+.navigate-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+.navigate-links li{
+    display: inline-block;
+    margin: 5px;
+}
+.navigate-links a{
+    color: var(--mainColor);
+}
+
+
+/*=============================btns===================================*/
+
+.btn{
+    color: #fff;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 0.9rem 2rem;
+    border: 2px solid var(--mainColor);
+    background-color: var(--mainColor);
+    border-radius: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: var(--transition);
+}
+.btn:hover{
+    color: #fff;
+    background-color: var(--mainFontColor);
+    border-color: var(--mainFontColor);
+}
+
+.login-btn.bordered-btn{
+        color: var(--mainFontColor);
+        width: fit-content;
+        margin: 0 auto;
+        padding: 0.9rem 2rem;
+        border: 2px solid var(--mainFontColor);
+        background-color: transparent;
+        border-radius: 5px;
+        text-align: center;
+        text-transform: uppercase;
+        transition: var(--transition);
+}
+.bordered-btn:hover{
+        color: #fff;
+        background-color: var(--mainFontColor);
+}
+
+
+
+
+
+
+
+
+
+/*=============================Responsive===================================*/
+
+/*small*/
+@media  (min-width:768px){
+    .container{
+        width: 750px;
+    }
+}
+@media (max-width: 767px){
+    .filter-search{
+        width: 100%;
+    }
+}
+
+/*medium*/
+
+@media (min-width:992px){
+    .container{
+        width: 970px;
+    }
+}
+/*large*/
+
+@media  (min-width:1200px){
+    .container{
+        width: 1170px;
+    }
+}
+
+
+
+
+
+
+
+
+
